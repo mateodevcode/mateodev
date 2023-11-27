@@ -1,0 +1,96 @@
+body {
+    box-sizing: border-box;
+}
+
+/* themmas */
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.binary {
+    background-color: black;
+    color: #A3E635;
+}
+
+.nobinary {
+    color: white;
+    visibility: hidden;
+}
+
+/* themmas */
+
+/* seccion de navbar */
+
+.navbar {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+}
+
+@keyframes enhance-header {
+  to {
+    background-color: rgba(30, 64, 175, 0.2);
+    backdrop-filter: blur(5px);
+  }
+}
+
+/* seccion de navbar */
+
+
+/* seccion de menu de navbar */
+
+.menu {
+  visibility: visible;
+  background-color: #050B1E;
+  background-color: rgba(5, 11, 30, 0.9);
+  position: absolute;
+  top: 100%;
+  transition: all ease-in 1s;
+}
+
+.ocultarMenu {
+  background-color: rgba(30, 64, 175, 0.2);
+  top: -500%;
+  position: absolute;
+  visibility: hidden;
+  transition: all ease 1s;
+}
+
+/* seccion de menu de navbar */
+
+
+
+
+/* Seccion de contacto */
+
+.contacto {
+  visibility: visible;
+  position: absolute;
+  height: 500px;
+  top: 20%;
+  border: 1px solid white;
+  background-color: #050B1E;
+  background-color: rgba(5, 11, 30, 0.9);
+  transition: all ease-in 1.5s;
+}
+
+.ocultarContacto {
+  background-color: rgba(30, 64, 175, 0.2);
+  position: absolute;
+  height: 500px;
+  top: -100%;
+  visibility: hidden;
+  transition: all ease-in 1.5s;
+}
+
+/* Seccion de contacto */
