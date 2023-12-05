@@ -1,6 +1,6 @@
 import "../App.css";
-import logo1 from "../img/logo-1.png";
-import logo2 from "../img/mateodev.png";
+import logo1 from "../img/iconos/logo-1.png";
+import logo2 from "../img/iconos/mateodev.png";
 import {
   BsList,
   BsGithub,

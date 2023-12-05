@@ -94,3 +94,21 @@ body {
 }
 
 /* Seccion de contacto */
+
+
+/* Seccion de Pages portafolio */
+
+
+.cardPage:hover {
+  opacity: 10%;
+}
+
+.icon-card {
+  z-index: 1;
+}
+
+.icon-card:hover {
+  cursor: pointer;
+}
+
+/* Seccion de Pages portafolio */

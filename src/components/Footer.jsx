@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/useContext";
-import logo2 from "../img/mateodev.png";
-import Minicard from '../img/minicard-2.png'
+import logo2 from "../img/iconos/mateodev.png";
+import Minicard from '../img/minicard/minicard-2.png'
 import {
   BsInstagram,
   BsLinkedin,
@@ -13,7 +13,7 @@ import {
   BsGeoAltFill,
   BsXSquare
 } from "react-icons/bs";
-import imgPerfil from "../img/img-perfil-2.jpg";
+import imgPerfil from "../img/img-profile/img-perfil-2.jpg";
 
 function Footer() {
   const { themma, mostarContacto, onclickMostrarContacto } = useAuth();
