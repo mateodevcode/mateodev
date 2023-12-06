@@ -5,7 +5,6 @@ export const AuthProvider = ({ children }) => {
   const [themma, setThemma] = useState("light");
   const [mostarMenu, setMostarMenu] = useState("ocultarMenu");
 
-
   const [mostarContacto, setMostrarContacto] = useState("ocultarContacto");
 
   const onclickMostrarContacto = () => {
@@ -33,9 +32,10 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+
   return (
     <AuthContext.Provider
-      value={{ themma, onClickThemma, mostarMenu, onclickMenu, mostarContacto, onclickMostrarContacto }}
+      value={{ themma, onClickThemma, mostarMenu, onclickMenu, mostarContacto, onclickMostrarContacto}}
     >
       {children}
     </AuthContext.Provider>

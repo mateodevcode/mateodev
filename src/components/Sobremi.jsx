@@ -36,7 +36,7 @@ function Sobremi() {
     },
     
   ]
-
+  
   return (
     <div className="w-full flex flex-row h-full md:justify-center md:items-start md:mt-40 md:mb-40 sm:mt-10 sm:mb-10">
       <div className="flex flex-col mx-5 md:w-5/12  md:text-base sm:text-xs md:mt-20 sm:mt-0">
@@ -46,7 +46,8 @@ function Sobremi() {
         <p className="md:text-3xl md:my-2 sm:my-0 sm:text-sm sm:mb-2">
           <i>Aquí podrás conocerme un poco más de mí</i>
         </p>
-        <div className="md:hidden sm:flex">
+        <div className="md:hidden sm:flex w-full flex justify-center items-center">
+          <div className="w-64">
           <ImageGallery
           infinite={true}
           autoPlay={true} 
@@ -55,6 +56,7 @@ function Sobremi() {
           slideInterval={1500}
           lazyLoad={true}
           items={images} />
+          </div>
         </div>
         <p className="md:text-xl sm:text-xs md:mt-2 sm:mt-5">
           <i>

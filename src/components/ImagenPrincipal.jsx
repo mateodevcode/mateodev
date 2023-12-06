@@ -1,41 +1,71 @@
 import "../App.css";
-import javascript from "../img/javascript.png";
-import python from "../img/python.png";
-import mongoDB from "../img/mongoDB.png";
-import nodeJs from "../img/nodejs.png";
-import imgReact from "../img/React.png";
-import git from "../img/git.png";
-import tailwind from "../img/tailwind.png";
-import css from "../img/css.png";
-import html from "../img/html.png";
-import npm from "../img/npm.png";
-
-// import rockasus from '../img/rockasus-2.png'
-// import dynamos from '../img/dynamo.png'
-// import mateodev from '../img/mateodev.png'
-// import wonly from '../img/wonly.png'
+import { skills } from "../data/SkillData";
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
 
 import { useAuth } from "../context/useContext";
-import { TypeBinary, TypeDescripcion, TypeNombres } from "./ShellInteractive";
+import { TypeBinary, TypeNombres } from "./ShellInteractive";
 
 function ImagenPrincipal() {
   const { themma } = useAuth();
+  const images = [
+    {
+      original: skills[0].imagen_512,
+      thumbnail: skills[0].imagen_150,
+    },
+    {
+      original: skills[1].imagen_512,
+      thumbnail: skills[1].imagen_150,
+    },
+    {
+      original: skills[2].imagen_512,
+      thumbnail: skills[2].imagen_150,
+    },
+    {
+      original: skills[3].imagen_512,
+      thumbnail: skills[3].imagen_150,
+    },
+    {
+      original: skills[4].imagen_512,
+      thumbnail: skills[4].imagen_150,
+    },
+    {
+      original: skills[5].imagen_512,
+      thumbnail: skills[5].imagen_150,
+    },
+    {
+      original: skills[6].imagen_512,
+      thumbnail: skills[6].imagen_150,
+    },
+    {
+      original: skills[7].imagen_512,
+      thumbnail: skills[7].imagen_150,
+    },
+    {
+      original: skills[8].imagen_512,
+      thumbnail: skills[8].imagen_150,
+    },
+    {
+      original: skills[9].imagen_512,
+      thumbnail: skills[9].imagen_150,
+    },
+  ];
 
   return (
-    <div className={`w-full flex justify-center items-center ${themma}`}>
-      <div className="w-11/12 h-full flex flex-row justify-around md:mt-20 sm:mt-32 md:mb-10 sm:mb-10">
-        <div className="w-9/12 flex flex-col items-start">
-          <div className="md:m-2 sm:m-1 w-full md:mt-40 sm:mt-20">
-            <div className="md:text-6xl sm:text-lg font-semibold">
+    <div className={`w-full flex justify-around items-center ${themma}`}>
+      <div className="w-10/12 h-full flex md:flex-row sm:flex-col justify-around md:my-36 sm:mt-10 sm:mb-48">
+        <div className="md:w-8/12 sm:w-full flex flex-col items-start md:mt-20">
+          <div className="md:m-2 sm:m-1 w-full">
+            <div className="md:text-6xl sm:text-2xl font-semibold md:h-28 sm:h-16">
               <TypeNombres />
             </div>
           </div>
-          <div className="md:m-2 sm:m-1 w-9/12">
-            <div className="md:text-xl sm:text-xs text-gray-400 md:h-20 sm:h-32">
-              <TypeDescripcion />
+          <div className="md:m-2 sm:m-1 w-12/12">
+            <div className="md:text-xl sm:text-xs text-gray-400 md:h-20 sm:h-12 md:text-left sm:text-justify md:mb-0 sm:mb-20">
+              <p>MateoDev es solo el reflejo profesional de toda mi trayectoria, un espacio donde podrás ver mis proyectos y disfrutar del aprendizaje que brindamos a través de todos los recursos obtenidos de esta comunidad.</p>
             </div>
           </div>
-          <div className="md:m-2 sm:m-1 w-12/12 sm:mt-10">
+          <div className="md:m-2 sm:m-1 w-12/12 sm:mt-10 md:flex sm:hidden">
             <div
               className={`md:text-xs sm:text-xs ${
                 themma == "dark" ? "binary" : "nobinary"
@@ -44,74 +74,23 @@ function ImagenPrincipal() {
               <TypeBinary />
             </div>
           </div>
-          {/* <div className="flex md:flex-row sm:flex-wrap justify-center items-center md:m-2 sm:m-1 opacity-40">
-            <img className="md:w-64 sm:w-20  rounded-md" src={rockasus} alt="" />
-            <img className="md:w-28 sm:w-10 " src={dynamos} alt="" />
-            <img className="md:w-64 sm:w-20 " src={wonly} alt="" />
-            <img className="md:w-20  sm:w-10  mx-3" src={mateodev} alt="" />
-          </div> */}
         </div>
-        <div className="w-3/12 flex flex-col items-end opacity-90 select-none">
-          <div className="flex md:flex-row sm:flex-col justify-center items-center md:my-2 sm:my-0">
-            <img
-              className="md:w-32 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={imgReact}
-              alt=""
-            />
-            <img
-              className="md:w-24 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle md:mr-10 sm:mr-2"
-              src={javascript}
-              alt=""
-            />
-          </div>
-          <div className="flex flex-row justify-center items-center md:my-2 sm:my-0.5">
-            <img
-              className="md:w-20 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={css}
-              alt=""
-            />
-            <img
-              className="md:w-16 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={html}
-              alt=""
-            />
-            <img
-              className="md:w-36 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={tailwind}
-              alt=""
-            />
-          </div>
-          <div className="flex md:flex-row sm:flex-col justify-center items-center md:my-2 sm:my-0.5">
-            <img
-              className="md:w-64 sm:w-16 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={git}
-              alt=""
-            />
-            <img
-              className="md:w-32 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={python}
-              alt=""
-            />
-          </div>
-          <div className="flex md:flex-row sm:flex-col justify-center items-center md:my-2 sm:my-0.5">
-            <img
-              className="md:w-36 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={npm}
-              alt=""
-            />
-            <img
-              className="md:w-40 sm:w-14 md:p-2 sm:p-1 hover:animate-wiggle"
-              src={nodeJs}
-              alt=""
-            />
-          </div>
-          <div className="flex flex-row justify-center items-center md:my-2 sm:my-0.5">
-            <img
-              className="md:w-56 sm:w-24 md:p-2 sm:p-1 hover:animate-wiggle md:mr-10 sm:mr-0"
-              src={mongoDB}
-              alt=""
-            />
-          </div>
+        <div
+          className="md:w-12 flex flex-row justify-center items-center skill-contenedor"
+          style={{ width: "200px", margin: "auto" }}
+        >
+          <ImageGallery
+            items={images}
+            infinite={true}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showNav={false}
+            showThumbnails={false}
+            showBullets={false}
+            slideInterval={2500}
+            autoPlay={true}
+            lazyLoad={true}
+          />
         </div>
       </div>
     </div>
