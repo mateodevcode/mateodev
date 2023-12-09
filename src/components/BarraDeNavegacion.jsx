@@ -1,6 +1,6 @@
 import "../App.css";
-import logo1 from "../img/iconos/logo-1.png";
-import logo2 from "../img/iconos/mateodev.png";
+import logo1 from "../img/iconos/logo-1.webp";
+import logo2 from "../img/iconos/mateodev.webp";
 import {
   BsList,
   BsGithub,
@@ -16,7 +16,7 @@ function BarraDeNavegacion() {
     themma,
     onClickThemma,
     onclickMenu,
-    mostarMenu,
+    mostrarMenu,
     onclickMostrarContacto,
   } = useAuth();
 
@@ -25,8 +25,8 @@ function BarraDeNavegacion() {
       className={`flex md:flex-row justify-around items-center w-full md:h-12 font-sans md:py-0 sm:py-2 ${themma} navbar`}
     >
       <Link to="/">
-        <div className="flex md:flex-row justify-center items-center font-serif font-semibold">
-          <img className="w-7 mr-2" src={logo2} alt="logo de rockasus" />
+        <div className="flex md:flex-row justify-center items-center font-serif font-semibold" title="Página principal de Mateodev">
+          <img className="w-7 mr-2 h-7" src={logo2} alt="logo de mateodev"/>
           <p className="bg-blue-800 px-2 py-1 rounded-xl text-white mr-1">
             MATEO
           </p>
@@ -40,7 +40,7 @@ function BarraDeNavegacion() {
           <p className="mx-4 md:my-0 sm:my-2 hover:text-sky-500">Inicio</p>
         </Link>
         <Link to="/sobre-mi" onClick={onclickMenu}>
-          <p className="mx-4 md:my-0 sm:my-2 hover:text-sky-500">Sobre mi</p>
+          <p className="mx-4 md:my-0 sm:my-2 hover:text-sky-500">Sobre mí</p>
         </Link>
         <Link to="/portafolio">
           <p className="mx-4 md:my-0 sm:my-2 hover:text-sky-500">Portafolio</p>
@@ -55,7 +55,7 @@ function BarraDeNavegacion() {
         </Link>
         <Link to="https://rockasus.com" target="_blank">
           <img
-            className={`w-7 md:flex md:my-0 sm:my-2`}
+            className={`w-7 h-7 md:flex md:my-0 sm:my-2`}
             src={logo1}
             alt="logo de rockasus"
           />
@@ -77,7 +77,7 @@ function BarraDeNavegacion() {
           onClick={onClickThemma}
         />
 
-        <Link to="https://github.com/mateodevcode" target="_blank">
+        <Link to="https://github.com/mateodevcode" aria-label="Ver mi github" target="_blank">
           <BsGithub
             className={`mx-2 cursor-pointer ${
               themma == "light" ? "hover:text-gray-800" : ""
@@ -85,8 +85,7 @@ function BarraDeNavegacion() {
           />
         </Link>
         <Link
-          to="https://www.linkedin.com/in/mateo-lizcano-noriega/"
-          target="_blank"
+          to="https://www.linkedin.com/in/mateo-lizcano-noriega/" aria-label="Ver mi linkedin" target="_blank"
         >
           <BsLinkedin
             className={`mx-2 cursor-pointer ${
@@ -100,7 +99,7 @@ function BarraDeNavegacion() {
         />
       </div>
       <div
-        className={`flex md:flex-row sm:flex-col justify-center items-center md:hidden ${mostarMenu} w-full text-white`}
+        className={`flex md:flex-row sm:flex-col justify-center items-center md:hidden ${mostrarMenu} w-full text-white`}
       >
         <Link to="/" onClick={onclickMenu}>
           <p className="mx-4 md:my-0 sm:my-2 hover:text-sky-500">Inicio</p>
@@ -121,7 +120,7 @@ function BarraDeNavegacion() {
         </Link>
         <Link to="https://rockasus.com" target="_blank">
           <img
-            className={`w-7 md:flex md:my-0 sm:my-2`}
+            className={`w-7 h-7 md:flex md:my-0 sm:my-2`}
             src={logo1}
             alt="logo de rockasus"
           />

@@ -45,10 +45,10 @@ function V0ImagenPrincipal() {
             </div>
           </div>
           {/* <div className="flex md:flex-row sm:flex-wrap justify-center items-center md:m-2 sm:m-1 opacity-40">
-            <img className="md:w-64 sm:w-20  rounded-md" src={rockasus} alt="" />
-            <img className="md:w-28 sm:w-10 " src={dynamos} alt="" />
-            <img className="md:w-64 sm:w-20 " src={wonly} alt="" />
-            <img className="md:w-20  sm:w-10  mx-3" src={mateodev} alt="" />
+            <img className="md:w-64 sm:w-20  rounded-md" src={rockasus} alt="rockasus" />
+            <img className="md:w-28 sm:w-10 " src={dynamos} alt="dynamos" />
+            <img className="md:w-64 sm:w-20 " src={wonly} alt="wonly" />
+            <img className="md:w-20  sm:w-10  mx-3" src={mateodev} alt="mateodev" />
           </div> */}
         </div>
         <div className="w-3/12 flex flex-col items-end opacity-90 select-none">
@@ -56,60 +56,60 @@ function V0ImagenPrincipal() {
             <img
               className="md:w-32 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
               src={imgReact}
-              alt=""
+              alt="React"
             />
             <img
               className="md:w-24 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle md:mr-10 sm:mr-2"
               src={javascript}
-              alt=""
+              alt="javascript"
             />
           </div>
           <div className="flex flex-row justify-center items-center md:my-2 sm:my-0.5">
             <img
               className="md:w-20 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
               src={css}
-              alt=""
+              alt="css"
             />
             <img
               className="md:w-16 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
               src={html}
-              alt=""
+              alt="html"
             />
             <img
               className="md:w-36 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
               src={tailwind}
-              alt=""
+              alt="tailwind"
             />
           </div>
           <div className="flex md:flex-row sm:flex-col justify-center items-center md:my-2 sm:my-0.5">
             <img
               className="md:w-64 sm:w-16 md:p-2 sm:p-1 hover:animate-wiggle"
               src={git}
-              alt=""
+              alt="git"
             />
             <img
               className="md:w-32 sm:w-8 md:p-2 sm:p-1 hover:animate-wiggle"
               src={python}
-              alt=""
+              alt="python"
             />
           </div>
           <div className="flex md:flex-row sm:flex-col justify-center items-center md:my-2 sm:my-0.5">
             <img
               className="md:w-36 sm:w-10 md:p-2 sm:p-1 hover:animate-wiggle"
               src={npm}
-              alt=""
+              alt="npm"
             />
             <img
               className="md:w-40 sm:w-14 md:p-2 sm:p-1 hover:animate-wiggle"
               src={nodeJs}
-              alt=""
+              alt="nodejs"
             />
           </div>
           <div className="flex flex-row justify-center items-center md:my-2 sm:my-0.5">
             <img
               className="md:w-56 sm:w-24 md:p-2 sm:p-1 hover:animate-wiggle md:mr-10 sm:mr-0"
               src={mongoDB}
-              alt=""
+              alt="mongodb"
             />
           </div>
         </div>

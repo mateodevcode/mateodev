@@ -1,9 +1,9 @@
-import pageLupin from '../img/imgpage/lupin.png'
-import pageDynamos from '../img/imgpage/dynamos.png'
-import pageRockasus from '../img/imgpage/rockasus.png'
-import pageMateodev from '../img/imgpage/mateodev.png'
-import pageejemplo2 from '../img/imgpage/code-1.jpg'
-import pageejemplo3 from '../img/imgpage/web.png'
+import pageLupin from '../img/imgpage/lupin.webp'
+import pageDynamos from '../img/imgpage/dynamos.webp'
+import pageRockasus from '../img/imgpage/rockasus.webp'
+import pageMateodev from '../img/imgpage/mateodev.webp'
+import pageejemplo2 from '../img/imgpage/code-1.webp'
+import pageejemplo3 from '../img/imgpage/web.webp'
 
 export const pages = [
     {

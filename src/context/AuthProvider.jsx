@@ -3,14 +3,14 @@ import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }) => {
   const [themma, setThemma] = useState("light");
-  const [mostarMenu, setMostarMenu] = useState("ocultarMenu");
+  const [mostrarMenu, setMostrarMenu] = useState("ocultarMenu");
 
-  const [mostarContacto, setMostrarContacto] = useState("ocultarContacto");
+  const [mostrarContacto, setMostrarContacto] = useState("ocultarContacto");
 
   const onclickMostrarContacto = () => {
-    if (mostarContacto == "ocultarContacto") {
+    if (mostrarContacto == "ocultarContacto") {
       setMostrarContacto("contacto")
-      setMostarMenu("ocultarMenu")
+      setMostrarMenu("ocultarMenu")
     } else {
       setMostrarContacto("ocultarContacto")
     }
@@ -25,17 +25,17 @@ export const AuthProvider = ({ children }) => {
   };
 
   const onclickMenu = () => {
-    if (mostarMenu == "ocultarMenu") {
-      setMostarMenu("menu");
+    if (mostrarMenu == "ocultarMenu") {
+      setMostrarMenu("menu");
     } else {
-      setMostarMenu("ocultarMenu");
+      setMostrarMenu("ocultarMenu");
     }
   };
 
 
   return (
     <AuthContext.Provider
-      value={{ themma, onClickThemma, mostarMenu, onclickMenu, mostarContacto, onclickMostrarContacto}}
+      value={{ themma, onClickThemma, mostrarMenu, onclickMenu, mostrarContacto, onclickMostrarContacto}}
     >
       {children}
     </AuthContext.Provider>

@@ -12,42 +12,52 @@ function ImagenPrincipal() {
     {
       original: skills[0].imagen_512,
       thumbnail: skills[0].imagen_150,
+      originalAlt: skills[0].alt, 
     },
     {
       original: skills[1].imagen_512,
       thumbnail: skills[1].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[2].imagen_512,
       thumbnail: skills[2].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[3].imagen_512,
       thumbnail: skills[3].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[4].imagen_512,
       thumbnail: skills[4].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[5].imagen_512,
       thumbnail: skills[5].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[6].imagen_512,
       thumbnail: skills[6].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[7].imagen_512,
       thumbnail: skills[7].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[8].imagen_512,
       thumbnail: skills[8].imagen_150,
+      originalAlt: skills[0].alt,
     },
     {
       original: skills[9].imagen_512,
       thumbnail: skills[9].imagen_150,
+      originalAlt: skills[0].alt,
     },
   ];
 
@@ -76,8 +86,8 @@ function ImagenPrincipal() {
           </div>
         </div>
         <div
-          className="md:w-12 flex flex-row justify-center items-center skill-contenedor"
-          style={{ width: "200px", margin: "auto" }}
+          className="md:w-12 md:h-12 flex flex-row justify-center items-center skill-contenedor"
+          style={{ width: "200px", height: "200px", margin: "auto" }}
         >
           <ImageGallery
             items={images}

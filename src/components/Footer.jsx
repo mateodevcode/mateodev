@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/useContext";
-import logo2 from "../img/iconos/mateodev.png";
-import Minicard from '../img/minicard/minicard-2.png'
+import logo2 from "../img/iconos/mateodev.webp";
+import Minicard from '../img/minicard/minicard-2.webp'
 import {
   BsInstagram,
   BsLinkedin,
@@ -16,7 +16,7 @@ import {
 import imgPerfil from "../img/img-profile/img-perfil-2.jpg";
 
 function Footer() {
-  const { themma, mostarContacto, onclickMostrarContacto } = useAuth();
+  const { themma, mostrarContacto, onclickMostrarContacto } = useAuth();
 
   const handlerDescargarImg = () => {
     const imgUrl = Minicard;
@@ -31,9 +31,9 @@ function Footer() {
   return (
     <div className={`w-full flex flex-col h-full ${themma}`}>
       <div className="flex justify-center items-center text-white">
-        <div className={`${mostarContacto} rounded-xl mb-5`}>
+        <div className={`${mostrarContacto} rounded-xl mb-5`}>
           <div className="flex justify-center flex-row items-center mt-5">
-            <img className="w-16 rounded-full mr-4" src={imgPerfil} alt="" />
+            <img className="w-16 rounded-full mr-4" src={imgPerfil} alt="Yo listo para jugar basket" />
             <div className="flex flex-col justify-center items-start">
               <p className="text-xl font-semibold">Mateo Lizcano Noriega</p>
               <p>Desarrollador de Software</p>
@@ -88,7 +88,7 @@ function Footer() {
 
       <div className="flex flex-row justify-center items-center font-semibold md:my-2 md:mb-0 sm:mb-5 mt-10">
         <div  className="flex justify-center items-center cursor-pointer">
-          <img className={`w-7 mx-2`} src={logo2} alt="" />
+          <img className={`w-7 h-7 mx-2`} src={logo2} alt="Logo de Mateodev" />
           <button className=" bg-blue-600 px-2 py-1 rounded-lg hover:bg-sky-300 text-white text-xs" onClick={onclickMostrarContacto}>
               Contactar
             </button>
@@ -120,7 +120,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-row justify-center items-center">
-          <Link to="https://www.linkedin.com/in/mateo-lizcano-noriega/" target="_blank">
+          <Link to="https://www.linkedin.com/in/mateo-lizcano-noriega/" aria-label="Ver mi linkedin" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
@@ -129,7 +129,7 @@ function Footer() {
               <BsLinkedin />
             </div>
           </Link>
-          <Link to="https://www.instagram.com/mateo.lizcano.noriega/" target="_blank">
+          <Link to="https://www.instagram.com/mateo.lizcano.noriega/" aria-label="Ver mi instagram" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
@@ -138,7 +138,7 @@ function Footer() {
               <BsInstagram />
             </div>
           </Link>
-          <Link to="https://www.facebook.com/mateo.lizcano.noriega/" target="_blank">
+          <Link to="https://www.facebook.com/mateo.lizcano.noriega/" aria-label="Ver mi facebook" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
@@ -147,7 +147,7 @@ function Footer() {
               <BsFacebook />
             </div>
           </Link>
-          <Link to="https://github.com/mateodevcode" target="_blank">
+          <Link to="https://github.com/mateodevcode" aria-label="Ver mi github" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
@@ -156,7 +156,7 @@ function Footer() {
               <BsGithub />
             </div>
           </Link>
-          <Link>
+          <Link to="/" aria-label="Ver mi aplicaciones de playstore" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
@@ -165,13 +165,13 @@ function Footer() {
               <BsGooglePlay />
             </div>
           </Link>
-          <Link to="https://api.whatsapp.com/message/YZ472YWAWRA5E1?autoload=1&app_absent=0" target="_blank">
+          <Link to="https://api.whatsapp.com/message/YZ472YWAWRA5E1?autoload=1&app_absent=0" aria-label="Enviar mensaje a Whatsapp" target="_blank">
             <div
               className={`mx-2 duration-500 ${
                 themma == "dark" ? "bg-white text-black" : "bg-black text-white"
               } p-2 rounded-full hover:bg-green-500 hover:text-white hover:scale-150`}
             >
-              <BsWhatsapp className="" />
+              <BsWhatsapp />
             </div>
           </Link>
         </div>

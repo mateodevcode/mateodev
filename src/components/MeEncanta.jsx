@@ -18,7 +18,7 @@ function MeEncanta() {
   };
 
   return (
-    <div className={`w-full mt-4`}>
+    <div className={`w-full mt-6`}>
       <div className="flex flex-row justify-between items-center mt-2 mx-4">
         <button
           className="flex flex-row justify-center items-center bg-blue-600 text-white text-xs px-2 py-1 rounded-lg"

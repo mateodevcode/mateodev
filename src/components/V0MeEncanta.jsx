@@ -32,7 +32,7 @@ function V0MeEncanta() {
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center">
-            <img className="w-40 rounded-xl" src={foto10} alt="" />
+            <img className="w-40 rounded-xl" src={foto10} alt="Foto en el carnavales 2023" />
             <button
               className="flex flex-row justify-center items-center bg-blue-600 text-white px-2 py-1 rounded-lg m-2"
               onClick={onclickLike}
