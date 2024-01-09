@@ -25,12 +25,12 @@ function BarraDeNavegacion() {
       className={`flex md:flex-row justify-around items-center w-full md:h-12 font-sans md:py-0 sm:py-2 ${themma} navbar`}
     >
       <Link to="/">
-        <div className="flex md:flex-row justify-center items-center font-serif font-semibold" title="Página principal de Mateodev">
+        <div className="flex md:flex-row justify-center items-center font-semibold" title="Página principal de Mateodev">
           <img className="w-7 mr-2 h-7" src={logo2} alt="logo de mateodev"/>
           <p className="bg-blue-800 px-2 py-1 rounded-xl text-white mr-1">
-            MATEO
+            Mateo
           </p>
-          <p className="">DEV</p>
+          <p className="">Dev</p>
         </div>
       </Link>
       <div

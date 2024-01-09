@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }) => {
-  const [themma, setThemma] = useState("light");
+  const [themma, setThemma] = useState("dark");
   const [mostrarMenu, setMostrarMenu] = useState("ocultarMenu");
 
   const [mostrarContacto, setMostrarContacto] = useState("ocultarContacto");

@@ -8,7 +8,8 @@ import tailwind_512 from "../img/skills/512/tailwind-512.webp";
 import css_512 from "../img/skills/512/css-512.webp";
 import html_512 from "../img/skills/512/html-512.webp";
 import npm_512 from "../img/skills/512/npm-512.webp";
-
+import chakra_512 from "../img/skills/512/chakra-512.png"
+import vite_512 from "../img/skills/512/vite-512.png"
 
 import javascript_150 from "../img/skills/150/javascript-150.png";
 import python_150 from "../img/skills/150/python-150.png";
@@ -20,6 +21,8 @@ import tailwind_150 from "../img/skills/150/tailwind-150.png";
 import css_150 from "../img/skills/150/css-150.png";
 import html_150 from "../img/skills/150/html-150.png";
 import npm_150 from "../img/skills/150/npm-150.png";
+import chakra_150 from "../img/skills/150/chakra-150.png";
+import vite_150 from "../img/skills/150/vite-150.png";
 
 
 export const skills = [
@@ -82,5 +85,17 @@ export const skills = [
     imagen_512: css_512,
     imagen_150: css_150,
     alt: "logo de css"
+  },
+  {
+    nombres: "chakra",
+    imagen_512: chakra_512,
+    imagen_150: chakra_150,
+    alt: "logo de chakra"
+  },
+  {
+    nombres: "vite",
+    imagen_512: vite_512,
+    imagen_150: vite_150,
+    alt: "logo de vite"
   },
 ];

@@ -79,7 +79,7 @@ function Sobremi() {
         <p className="md:text-xl sm:text-xs">
           <i>
             Soy una persona,
-            <strong> Alegre, Honesta, responsable y muy enfocada.</strong>
+            <strong> alegre, honesta, responsable y muy enfocada.</strong>
           </i>
         </p>
         <p className="md:text-xl sm:text-xs">
@@ -96,9 +96,10 @@ function Sobremi() {
           <i>
             Actualmente, sé de
             <strong>
+              {" "}
               análisis de datos, desarrollo web, desarrollo Android,
               automatización de procesos, manejo de personal, liderazgo
-            </strong>
+            </strong>{" "}
             y lo más importante es que día a día sigo aprendiendo para estar
             actualizado de las nuevas tecnologías.
           </i>

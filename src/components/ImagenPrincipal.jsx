@@ -8,58 +8,14 @@ import { TypeBinary, TypeNombres } from "./ShellInteractive";
 
 function ImagenPrincipal() {
   const { themma } = useAuth();
-  const images = [
-    {
-      original: skills[0].imagen_512,
-      thumbnail: skills[0].imagen_150,
-      originalAlt: skills[0].alt, 
-    },
-    {
-      original: skills[1].imagen_512,
-      thumbnail: skills[1].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[2].imagen_512,
-      thumbnail: skills[2].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[3].imagen_512,
-      thumbnail: skills[3].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[4].imagen_512,
-      thumbnail: skills[4].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[5].imagen_512,
-      thumbnail: skills[5].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[6].imagen_512,
-      thumbnail: skills[6].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[7].imagen_512,
-      thumbnail: skills[7].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[8].imagen_512,
-      thumbnail: skills[8].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-    {
-      original: skills[9].imagen_512,
-      thumbnail: skills[9].imagen_150,
-      originalAlt: skills[0].alt,
-    },
-  ];
+
+  const images = skills.map((skill) => {
+    return {
+      original: skill.imagen_512,
+      thumbnail: skill.imagen_150,
+      originalAlt: skill.alt
+    }
+  })
 
   return (
     <div className={`w-full flex justify-around items-center ${themma}`}>
