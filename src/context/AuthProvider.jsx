@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AuthContext } from "./AuthContext";
+import Minicard from "../img/minicard/minicard-1.jpg";
 
 export const AuthProvider = ({ children }) => {
   const [themma, setThemma] = useState("dark");
@@ -33,9 +34,20 @@ export const AuthProvider = ({ children }) => {
   };
 
 
+  const handlerDescargarImg = () => {
+    const imgUrl = Minicard;
+    const downlandLink = document.createElement("a");
+    downlandLink.href = imgUrl;
+    downlandLink.download = "MiniCard.jpg";
+    document.body.appendChild(downlandLink);
+    downlandLink.click();
+    document.body.removeChild(downlandLink);
+  };
+
+
   return (
     <AuthContext.Provider
-      value={{ themma, onClickThemma, mostrarMenu, onclickMenu, mostrarContacto, onclickMostrarContacto}}
+      value={{ themma, onClickThemma, mostrarMenu, onclickMenu, mostrarContacto, onclickMostrarContacto, handlerDescargarImg}}
     >
       {children}
     </AuthContext.Provider>

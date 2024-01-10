@@ -1,46 +1,15 @@
-import fotoPerfil1 from "../img/img-profile-2/foto-1.webp";
-import fotoPerfil7 from "../img/img-profile-2/foto-7.webp";
-import fotoPerfil3 from "../img/img-profile-2/foto-13.webp";
-import fotoPerfil10 from "../img/img-profile-2/foto-10.webp";
-import fotoPerfil12 from "../img/img-profile-2/foto-12.webp";
-import fotoPerfil17 from "../img/img-profile-2/foto-17.webp";
-import fotoPerfil14 from "../img/img-profile-2/foto-14.webp";
-
-import { useAuth } from "../context/useContext";
 import ImageGallery from "react-image-gallery";
+import { perfils } from "../data/PerfilData";
+import ImgSobremi from "./ImgSobremi";
 
 function Sobremi() {
-  const { themma } = useAuth();
-  const images = [
-    {
-      original: fotoPerfil1,
-      originalAlt: "Foto formal",
-    },
-    {
-      original: fotoPerfil7,
-      originalAlt: "Foto con mi novia",
-    },
-    {
-      original: fotoPerfil3,
-      originalAlt: "Foto formal",
-    },
-    {
-      original: fotoPerfil10,
-      originalAlt: "Foto en el carnaval 2023",
-    },
-    {
-      original: fotoPerfil12,
-      originalAlt: "Foto en el castillo de españa",
-    },
-    {
-      original: fotoPerfil17,
-      originalAlt: "Foto en la playa de taganga",
-    },
-    {
-      original: fotoPerfil14,
-      originalAlt: "Foto formal",
-    },
-  ];
+  const images = perfils.map((perfil) => {
+    return {
+      original: perfil.imagen_512,
+      thumbnail: perfil.imagen_150,
+      originalAlt: perfil.alt,
+    };
+  });
 
   return (
     <div className="w-full flex flex-row h-full md:justify-center md:items-start md:mt-40 md:mb-40 sm:mt-10 sm:mb-10">
@@ -106,53 +75,16 @@ function Sobremi() {
         </p>
       </div>
       <div className="md:flex md:flex-row sm:flex-col justify-center items-center mx-5 md:w-5/12 sm:w-11/12 sm:hidden">
+        <ImgSobremi imgPerfil={0} />
         <div className="flex md:flex-col sm:flex-col justify-center items-center">
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil1}
-            alt="Foto de perfil formal"
-          />
+          <ImgSobremi imgPerfil={1} />
+          <ImgSobremi imgPerfil={2} />
         </div>
+
         <div className="flex md:flex-col sm:flex-col justify-center items-center">
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil17}
-            alt="Foto en las playas de taganga"
-          />
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil7}
-            alt="Fotos con mi novia"
-          />
-        </div>
-        <div className="flex md:flex-col sm:flex-col justify-center items-center">
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil10}
-            alt="Fotos en los carnavales 2023"
-          />
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil3}
-            alt="Foto de perfil formal"
-          />
-          <img
-            className={`md:w-48 sm:w-24 md:h-64 sm:h-32 m-2 rounded-lg shadow-lg hover:scale-105 ${
-              themma == "light" ? "shadow-black" : "shadow-blue-900"
-            }`}
-            src={fotoPerfil12}
-            alt="Foto en el castillo de españa"
-          />
+          <ImgSobremi imgPerfil={4} />
+          <ImgSobremi imgPerfil={5} />
+          <ImgSobremi imgPerfil={6} />
         </div>
       </div>
     </div>

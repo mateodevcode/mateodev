@@ -24,7 +24,7 @@ function Portafolio() {
           Productos terminados.
         </p>
 
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center items-center">
           {Pagescompleted.map((page, i) => {
             return (
               <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>
@@ -68,7 +68,7 @@ function Portafolio() {
         >
           Proyectos en curso...
         </p>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center items-center">
           {pagesProcess.map((page, i) => {
             return (
               <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>

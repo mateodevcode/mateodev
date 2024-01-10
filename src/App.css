@@ -73,32 +73,18 @@ body {
 
 /* Seccion de contacto */
 
-.contacto {
-  visibility: visible;
-  position: absolute;
-  height: 500px;
-  top: 20%;
-  border: 1px solid white;
-  background-color: #050B1E;
-  background-color: rgba(5, 11, 30, 0.9);
-  transition: all ease-in 1.5s;
+.lightCv {
+  background-color: rgba(30, 64, 175, 0.2);
+  /* background-color: rgba(5, 11, 30, 0.9); */
+
+  
 }
 
-.ocultarContacto {
+.darkCv {
   background-color: rgba(30, 64, 175, 0.2);
-  position: absolute;
-  height: 500px;
-  top: -100%;
-  visibility: hidden;
-  transition: all ease-in 1.5s;
+  
 }
 
 /* Seccion de contacto */
-
-
-/* Seccion de Pages portafolio */
-
-
-/* Seccion de Pages portafolio */
 
 
