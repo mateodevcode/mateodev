@@ -5,9 +5,8 @@ import ImgSobremi from "./ImgSobremi";
 function Sobremi() {
   const images = perfils.map((perfil) => {
     return {
-      original: perfil.imagen_512,
-      thumbnail: perfil.imagen_150,
-      originalAlt: perfil.alt,
+      original: perfil.original,
+      originalAlt: perfil.originalAlt,
     };
   });
 
@@ -23,13 +22,16 @@ function Sobremi() {
         <div className="md:hidden sm:flex w-full flex justify-center items-center mb-10">
           <div className="w-64 h-80">
             <ImageGallery
-              infinite={true}
-              autoPlay={true}
-              showFullscreenButton={false}
-              showPlayButton={false}
-              slideInterval={1500}
-              lazyLoad={true}
               items={images}
+              infinite={true}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              showNav={true}
+              showThumbnails={false}
+              showBullets={true}
+              slideInterval={2500}
+              autoPlay={true}
+              lazyLoad={true}
             />
           </div>
         </div>

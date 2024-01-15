@@ -13,7 +13,7 @@ function Footer() {
       <div className="text-center text-sm mt-5 mb-10">
         <p className="select-none">
           Todos los derechos reservados. Desarrollado por{" "}
-          <strong>MateoDev</strong> © 2023.
+          <strong>Rockasus</strong> © 2023.
         </p>
       </div>
     </div>

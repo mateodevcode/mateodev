@@ -23,37 +23,38 @@ function Portafolio() {
         >
           Productos terminados.
         </p>
-
-        <div className="flex flex-wrap justify-center items-center">
-          {Pagescompleted.map((page, i) => {
-            return (
-              <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>
-                <Link to={page.linkTo} target={"_blank"}>
-                  <div
-                    className={`w-full shadow-lg hover:scale-105 cursor-pointer ${
-                      themma == "light" ? " shadow-black" : "shadow-blue-900"
-                    } p-5 rounded-lg`}
-                  >
-                    <img
-                      className="rounded-lg md:w-72 md:h-72"
-                      src={page.imgPage}
-                      alt={page.nombre}
-                    />
-                    <div className="flex justify-between items-center mt-5">
-                      <p className="font-bold text-sm">{page.nombre}</p>
-                      <p
-                        className={`text-xs ${
-                          themma == "dark" ? "text-white" : "text-gray-800"
-                        }`}
-                      >
-                        {page.date}
-                      </p>
+        <div className="flex flex-wrap justify-center items-center w-full">
+          <div className="flex flex-wrap justify-center items-center">
+            {Pagescompleted.map((page, i) => {
+              return (
+                <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>
+                  <Link to={page.linkTo} target={"_blank"}>
+                    <div
+                      className={`w-full shadow-lg hover:scale-105 cursor-pointer ${
+                        themma == "light" ? " shadow-black" : "shadow-blue-900"
+                      } p-5 rounded-lg`}
+                    >
+                      <img
+                        className="rounded-lg md:w-72 md:h-72"
+                        src={page.imgPage}
+                        alt={page.nombre}
+                      />
+                      <div className="flex justify-between items-center mt-5">
+                        <p className="font-bold text-sm">{page.nombre}</p>
+                        <p
+                          className={`text-xs ${
+                            themma == "dark" ? "text-white" : "text-gray-800"
+                          }`}
+                        >
+                          {page.date}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -68,36 +69,38 @@ function Portafolio() {
         >
           Proyectos en curso...
         </p>
-        <div className="flex flex-wrap justify-center items-center">
-          {pagesProcess.map((page, i) => {
-            return (
-              <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>
-                <Link to={page.linkTo} target={"_blank"}>
-                  <div
-                    className={`w-full shadow-lg hover:scale-105 cursor-pointer ${
-                      themma == "light" ? " shadow-black" : "shadow-blue-900"
-                    } p-5 rounded-lg`}
-                  >
-                    <img
-                      className="rounded-lg md:w-72 md:h-72"
-                      src={page.imgPage}
-                      alt={page.nombre}
-                    />
-                    <div className="flex justify-between items-center mt-5">
-                      <p className="font-bold text-sm">{page.nombre}</p>
-                      <p
-                        className={`text-xs ${
-                          themma == "dark" ? "text-white" : "text-gray-800"
-                        }`}
-                      >
-                        {page.date}
-                      </p>
+        <div className="flex flex-row justify-center items-center w-full">
+          <div className="flex flex-wrap justify-center items-center">
+            {pagesProcess.map((page, i) => {
+              return (
+                <div className="md:w-80 sm:w-60 md:m-10 sm:m-5" key={i}>
+                  <Link to={page.linkTo} target={"_blank"}>
+                    <div
+                      className={`w-full shadow-lg hover:scale-105 cursor-pointer ${
+                        themma == "light" ? " shadow-black" : "shadow-blue-900"
+                      } p-5 rounded-lg`}
+                    >
+                      <img
+                        className="rounded-lg md:w-72 md:h-72"
+                        src={page.imgPage}
+                        alt={page.nombre}
+                      />
+                      <div className="flex justify-between items-center mt-5">
+                        <p className="font-bold text-sm">{page.nombre}</p>
+                        <p
+                          className={`text-xs ${
+                            themma == "dark" ? "text-white" : "text-gray-800"
+                          }`}
+                        >
+                          {page.date}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
