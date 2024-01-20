@@ -2,7 +2,8 @@ import { Box, Divider, HStack, Image, Text } from "@chakra-ui/react";
 import { MdOutlineAssuredWorkload } from "react-icons/md";
 import { BsGeoAlt } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-import img_perfil2 from "../img/img-perfil2.jpg";
+// import img_perfil2 from "../img/img-perfil2.jpg";
+import foto_perfil from "../img/foto_perfil.jpg"
 import fondo from "../img/fondo.jpg";
 
 const CVitae = () => {
@@ -21,7 +22,7 @@ const CVitae = () => {
           >
             <Image
               className="rounded-full -mb-20 bg-gray-100 border-solid border-4 w-40"
-              src={img_perfil2}
+              src={foto_perfil}
               alt="Profile Picture"
             />
           </div>
@@ -40,7 +41,7 @@ const CVitae = () => {
             <HStack spacing={3} color="gray.300">
               <MdOutlineAssuredWorkload size={24} />
               <p className="text-2xl font-semibold text-gray-300 my-1">
-                Project Manager
+                Software Developer
               </p>
             </HStack>
             <HStack spacing={3} color="gray.200">
